@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ae:configurations xmlns="http://agavi.org/agavi/config/parts/autoload/1.0" xmlns:ae="http://agavi.org/agavi/config/global/envelope/1.0">
+	
+	<ae:configuration>
+		
+		<autoload name="countriesDefaultBaseAction">%core.module_dir%/Default/lib/action/countriesDefaultBaseAction.class.php</autoload>
+		<autoload name="countriesDefaultBaseModel">%core.module_dir%/Default/lib/model/countriesDefaultBaseModel.class.php</autoload>
+		<autoload name="countriesDefaultBaseView">%core.module_dir%/Default/lib/view/countriesDefaultBaseView.class.php</autoload>
+		
+	</ae:configuration>
+	
+</ae:configurations>

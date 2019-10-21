@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ae:configurations
+	xmlns="http://agavi.org/agavi/config/parts/validators/1.0"
+	xmlns:ae="http://agavi.org/agavi/config/global/envelope/1.0"
+	parent="%core.module_dir%/Countries/config/validators.xml"
+>
+	
+	<ae:configuration>
+		
+		<validators method="write">
+			<validator name="CountryNameValidator" class="string" required="true">
+				<arguments>
+					<argument>countryName</argument>
+				</arguments>
+				<errors>
+					<error for="required">Please enter name</error>
+				</errors>
+			</validator>
+
+			<validator name="CountryCodeValidator" class="string" required="true">
+				<arguments>
+					<argument>code</argument>
+				</arguments>
+				<errors>
+					<error for="required">Please enter code</error>
+				</errors>
+				<ae:parameters>
+					<ae:parameter name="min">2</ae:parameter>
+					<ae:parameter name="max">2</ae:parameter>
+				</ae:parameters>
+			</validator>
+		
+		</validators>
+	</ae:configuration>
+	
+</ae:configurations>

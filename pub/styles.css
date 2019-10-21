@@ -1,0 +1,68 @@
+body { margin:0;  padding:  10px; font-family: Arial;}
+.main_content , .container{ max-width: 1000px; margin:0 auto; padding: 10px;}
+.main_content div p{ text-align: center; }
+.main_content #breadcrumbs {width: 100%; float: none; display: block; padding: 10px 0;}
+h2 {text-align: center;}
+p { font-size: 22px; }
+table { 
+	text-align: center; 
+	vertical-align: middle; 
+	border-collapse: collapse;
+	width: 100%; 
+	max-width: 1000px; 
+	margin: 0 auto;
+}
+table td, table th { border: 1px solid #015249; padding: 5px; }
+table tr td:nth-of-type(2) { text-align: left;}
+table tr:nth-of-type(2n){ background:#c1c1c1; }
+table td.delete  {width: 40px;}
+table td.delete a {color:#ff0000;}
+table h2 { margin:0;}
+.id { width: 40px; }
+
+#edit label, #edit input[type="text"], #add label, #add input[type="text"]{
+	display: inline-block;
+	margin:5px 0;
+}
+#edit input[type="text"], #add input[type="text"] { width: 75%; }
+#edit label, #add label { max-width: 150px; width: 20%; }
+#edit #update, #add #insert {
+	margin:10px 0;
+	padding: 5px;
+	width: 159px;
+	border:0;
+	background: #c1c1c1;
+	display: block;
+	position: relative;
+	float: right;
+	right: 10%;
+}
+form#delete {
+	text-align: center;
+}
+
+button#delete, a#cancel{
+	margin:10px 0;
+	padding: 5px;
+	width: 159px;
+	border:0;
+	background: #c1c1c1;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-size: 15px;
+	text-align: center;
+}
+p.message {
+	color: #ff0000;
+	text-align: center;
+	text-decoration: underline;
+}
+.errors {list-style: none;}
+.errors li { 
+	font-weight: bolder;
+	color:#ff0000;
+}
+
+.user_acc { text-align: center; width: 100%;  max-width: 1000px; }
+#logout { text-align: center; }
